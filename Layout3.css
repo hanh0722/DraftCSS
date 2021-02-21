@@ -391,7 +391,7 @@ form > ::placeholder{
     }
     /* FIX FEEDBACK */
     .feedback{
-        height: 50vh;
+        height: 60vh;
     }
     .feed-back-1 > p, .feed-back-2 > p, .feed-back-3 > p{
         font-size: 0.3rem;
