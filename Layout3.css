@@ -414,7 +414,7 @@ form > ::placeholder{
         letter-spacing: 1px;
     }
     .nav-list > li{
-        padding: 0% 7%;
+        padding: 0% 5%;
     }
     /* FIX PICTURE INSIDE */
     .content-picture{
@@ -450,7 +450,7 @@ form > ::placeholder{
         height: 50vh;
     }
     .feed-back-1 > p, .feed-back-2 > p, .feed-back-3 > p{
-        font-size: 0.3rem;
+        font-size: 0.2rem;
     }
     .title{
         font-size: 0.5rem !important;
