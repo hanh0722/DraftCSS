@@ -52,12 +52,11 @@
     height: 50%;
     justify-content: space-evenly;
 }
-
-.content > div >  span{
+.content > .content-picture-1 >  span{
     border: 5px solid rgba(253, 239, 240, 0.6);
     padding: 1vw;
 }
-.content > div >  span:hover{
+.content > .content-picture-1 >  span:hover{
     color: rgb(253, 239, 240);
 }
 .btn-content{
@@ -77,6 +76,10 @@
     cursor: pointer;
     color:rgba(220, 24, 29,0.7);
     background-color: rgba(253, 239, 240, 0.85);
+}
+/* ANIMATION ROOT */
+.animate__fadeInRight, .animate__fadeInLeft{
+    animation-duration: 2s !important;
 }
 hr{
     border-width: 2vh 0px; 
@@ -204,6 +207,10 @@ hr{
     color: rgba(220, 24, 29,0.9);
     font-weight: 600;
 }
+.des-content > p:hover{
+    cursor: pointer;
+    color: rgba(253, 239, 240, 0.85);
+}
 .destination-content > .des-content > img{
     width: 100%;
     /* margin-left: auto;
@@ -222,10 +229,11 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Alegreya Sans SC', sans-serif;
     background-color: rgba(165, 192, 222, 0.8);
     padding: 2%;
+    color: rgba(220, 24, 29,0.9);
 }
 /* SUBSCRIPTION BOX */
 .Subscribe-form{
@@ -240,6 +248,7 @@ hr{
     background-image: url(https://www.expatica.com/app/uploads/sites/9/2014/05/family-reunification-switzerland-1920x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.9;
 }
 form > ::placeholder{
     color: rgba(0,0,0, 0.7);
@@ -273,8 +282,19 @@ form > ::placeholder{
     align-items: center;
 }
 .register{
-    color: white;
+    color: black;
     width: 50% !important;
+    border: 2px solid rgba(220, 24, 29,0.9) !important;
+    background-color: rgba(253, 239, 240, 0.6) !important;
+    font-size: 1.2rem !important;
+    border-radius: 2rem !important;
+    text-transform: uppercase;
+}   
+.register:hover{
+    background-color: rgba(220, 24, 29,0.7) !important;
+    border-color: rgba(0,0,0, 0.7) !important;
+    color: rgba(253, 239, 240, 0.85) !important;
+    cursor: pointer;
 }
 /* COPYRIGHT */
 .copyright{
@@ -349,6 +369,42 @@ form > ::placeholder{
     color: rgba(220, 24, 29,0.9);
     cursor: pointer;
 }
+/* AUTHOR */
+.title-author{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(	230, 230, 230, 0.5);
+    padding: 2%;
+    text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+}
+.author{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 5%;
+}
+.picture-author{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.picture-author2{
+    width: 45%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.picture-author > p, .picture-author2 > p{
+    font-size: 0.8rem;
+    font-family: 'Catamaran', sans-serif;
+}
+.picture-author > img, .picture-author2 > img{
+    width: 45%;
+    border-radius: 20%;
+    padding: 5% 5%;
+}
 @media screen and (max-width: 720px)
 {
 
@@ -358,7 +414,7 @@ form > ::placeholder{
         letter-spacing: 1px;
     }
     .nav-list > li{
-        padding: 0% 5%;
+        padding: 0% 7%;
     }
     /* FIX PICTURE INSIDE */
     .content-picture{
@@ -391,13 +447,13 @@ form > ::placeholder{
     }
     /* FIX FEEDBACK */
     .feedback{
-        height: 60vh;
+        height: 50vh;
     }
     .feed-back-1 > p, .feed-back-2 > p, .feed-back-3 > p{
         font-size: 0.3rem;
     }
     .title{
-        font-size: 0.4rem !important;
+        font-size: 0.5rem !important;
         letter-spacing: 1px;
     }
     /* FIX DESTINATION TITLE */
@@ -435,5 +491,15 @@ form > ::placeholder{
     }
     .copyright-content > .container-content > input{
         padding: 2%;
+    }
+    /* FIX AUTHOR */
+    .title-author{
+        font-size: 1.2rem;
+    }
+    .picture-author > p, .picture-author2 > p{
+        font-size: 0.3rem;
+        text-align: justify;
+        font-family: 'Catamaran', sans-serif;
+        padding: 20% 0%;
     }
 }

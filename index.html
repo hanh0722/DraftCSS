@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <link rel="stylesheet" type="text/css" href="Layout3.css">
+    <!-- Link animation bootstrap -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Link Awesome Font Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font nav -->
@@ -37,6 +42,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Sarala&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet"> 
+    <!-- LINK FONT AUTHOR -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <!-- LINK ANIMATION ALL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="container">
@@ -59,14 +69,14 @@
         </div>
         <!-- COVER MIDDLE -->
         <div class="content-picture">
-            <div class="content">
-                <div><span>Discover</span> the entire world</div>
-                <button class="btn-content">Learn more</button>
+            <div class="content" data-aos="fade-up">
+                <div class="content-picture-1 animate__animated animate__fadeIn"><span>Discover</span> the entire world</div>
+                <button class="btn-content animate__animated animate__fadeInLeft">Learn more</button>
             </div>
         </div>
         <hr>
         <!-- ICON AND LITTLE INFORMATION -->
-        <div class="icon-infor">
+        <div class="icon-infor" data-aos="fade-right">
             <div class="icon-infor-1">
                 <div class="infor-1">
                     <i class="fa fa-map-o" aria-hidden="true"></i>
@@ -105,8 +115,8 @@
                 </div>
             </div>
         </div>
-        <div class="main-title">feedback from our customers</div>
-        <div class="feedback">
+        <div class="main-title" data-aos="slide-right">feedback from our customers</div>
+        <div class="feedback" data-aos="slide-right">
             <div class="feed-back-1">
             <img src="picture5.jpg">
             <p class="title">Andy & Matthew</p>
@@ -134,8 +144,8 @@
                 </p>
             </div>
         </div>
-        <div class="title-destination">Destinations</div>
-        <div class="destination-content">
+        <div class="title-destination" data-aos="slide-up">Destinations</div>
+        <div class="destination-content" data-aos="slide-up">
             <div class="des-content">
                 <img src="picture-a.jpg">
                 <p>Bern</p>
@@ -163,11 +173,33 @@
                 <p>St moritz</p>
             </div>
         </div>
-        <div class="sub-title">
+        <div class="title-author" data-aos="fade">Our author & owner</div>
+        <div class="author" data-aos="fade-up">
+            <div class="picture-author">
+                <img src="picture-1-ava.jpg">
+                <p> 
+                    <span style="text-transform: uppercase">Mr. Brian - Content creator</span><br><br>
+                    Our life, our world is enormous, the life is short, distance is long,  
+                    time is fast. We only live once, why don't we try doing
+                    something better. Build everything, make our dream become true, it's 
+                    what we want to bring for any travelers coming with us.
+                </p>
+            </div>
+            <div class="picture-author2" data-aos="fade-up">
+                <img src="picture-2-ava.jpg">
+                <p>
+                    <span style="text-transform: uppercase;">Mr. Stephan - Owner - Inspiring person</span><br><br>
+                    The life changes so much, my life has many up and down sections. 
+                    It's what we need to overcome, travel is also a journey like our life, 
+                    but we can control it, discover the whole world outside and meet new people, friends. 
+                </p>
+            </div>
+        </div>
+        <div class="sub-title" data-aos="fade-up">
             <h2>Subscription form</h2>
             <h4>Subscribe now to receive discounts from us!</h4>
         </div>
-        <div class="Subscribe-form">
+        <div class="Subscribe-form" data-aos="fade-up">
             <div class="sub-form">
                 <form>
                     <p>Name</p>
@@ -186,7 +218,7 @@
                     <p>phone number</p>
                     <input type="tel" name="tel" placeholder="0123-456-789" required maxlength="15">
                     <p>Email</p>
-                    <input type="email" name="email" placeholder="Abcd@gmail.com" required>
+                    <input type="email" name="email" placeholder="Example: abcd@gmail.com" required>
                     <p>I want to receive news and information via email</p>
                     <input type="checkbox" name="receivenews">
                     <input class="register" type="submit" value="Register">
@@ -215,5 +247,14 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+        {
+            offset: 300,
+            duration: 1000
+        }
+    );
+  </script>
 </body>
 </html>
